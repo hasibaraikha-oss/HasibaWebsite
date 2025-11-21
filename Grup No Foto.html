@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasiba Identitas</title>
+    <style>
+        body{
+        background-color: black;
+        }
+        p1{
+            color: white;
+        }
+        h1{
+            text-align: center; font-family: 'Times New Roman', Times, serif; color: white;
+        }
+        a{
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        a:hover{
+            transform: translateY(-3px);
+        }
+        div{
+            display: inline-block;
+            color: royalblue;
+            border: black; background-color: brown; border-radius: 20px; padding: 0px 5px 0px 5px;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+    </style>
+</head>
+<body>
+    <header style="padding: 10px; text-align: center; color: white; background: linear-gradient(135deg, #4a90e2, #9013fe);">
+        <h1>Hallo Semwaa</h1>
+    </header>
+    <p style="text-align: center; font-family: Times New Roman, Times, serif; color: white;">
+        pada website ini, aku bisa perkenalan diri tanpa ngetik berkali kali di whatsapp
+    </p>
+    <br><br>
+    <button id="tombolMusik" onclick="putarMusik()" style="
+         padding: 10px 15px;
+         background-color: royalblue;
+         color: white;
+         border: none;
+         border-radius: 8px;
+         cursor: pointer;">
+    ▶ musik biar ga hening
+    </button>
+
+    <audio id="musikku">
+        <source src="Feast - Tarot (Official Lyric Video).mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        function putarMusik() {
+        const musik = document.getElementById("musikku");
+        const tombolMusik = document.getElementById("tombolMusik")
+        if (musik.paused) {
+             musik.play();
+             tombolMusik.innerText = "⏸ Jeda musik";
+            } 
+        else {
+              musik.pause();
+              tombolMusik.innerText = "▶ Lanjut musik";
+         }}
+    </script><br>
+    <p2 style="color: white; font-family: Arial, Helvetica, sans-serif;">klik buat mulai, klik lagi buat pause</p2><br><br><br>
+
+    <table class="block" style=" display: inline-block;
+            border: 10px saddlebrown; background-color: gray; border-radius: 15px; padding-left: 20px;
+            padding-right: 200px;">
+        <tr>
+            <td>
+                <p style="color: white; padding-left: 10px;">disini saya akan memperkenalkan diriku sendiri terlebih dahulu:</p>
+                <img style= "border: 1px solid black; " src="C:\Users\ASUS Laptop\OneDrive\รูปภาพ\Screenshots\Screenshot 2025-11-14 213212.png" width="200" height="200">
+            </td>
+            <td style="padding-left: 0px; line-height: 1.5;">Nama : Hasiba Raikha Purnama.<br>
+            Umur : 19<br>
+            Hobi : main game, tidur, makan<br><br>
+            <a href="https://www.instagram.com/oneng_hashiii/" style="
+             border: 2px solid white;
+             background-color: blanchedalmond;
+             padding: 0;
+             display: inline-block;
+             border-radius: 5px;
+             text-decoration: none;
+             color: black;">
+             <img src="D:\PDK hiba\grup no foto\Instagram_logo_2016.svg.webp" width="20">
+             link instagram</a><br><br>
+             <a href="https://www.tiktok.com/@ciexie34?is_from_webapp=1&sender_device=pc" style="
+             border: 2px solid white;
+             background-color: blanchedalmond;
+             padding: 0;
+             display: inline-block;
+             border-radius: 5px;
+             text-decoration: none;
+             color: black;">
+             <img src="logo tiktok.png" width="25">
+             Link Tiktok</a>
+            </td>
+        </tr>
+    </table>
+    <br><br><br><br><br><br>
+</body>
+</html>
